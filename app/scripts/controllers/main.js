@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the mark2App
  */
-angular.module('mark2App')
+angular.module('tekApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

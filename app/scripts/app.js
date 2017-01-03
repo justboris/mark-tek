@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('mark2App', [
+  .module('tekApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
