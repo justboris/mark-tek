@@ -1,0 +1,42 @@
+@import "color.scss";
+
+.search-section{
+	width: 369px;
+	.input-group,
+	header-contact{
+	  display: inline-block;
+	}
+	.input{
+	  width: 269px;
+	}
+}
+.logo-corvias{
+    background: url("/images/logo-corvias.png") no-repeat 0 0/85%;
+    width: 200px;
+    height: 66px;
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.nav.navbar-nav{
+  li{
+	font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    a{
+      color: $nav-color;
+    }
+  }
+  .dropdown-menu{
+    background: $nav-dropdown;
+    li{
+      a{
+        background: $nav-dropdown;
+        color: white;
+        &:hover{
+          color: $nav-dropdown-hover;
+        }
+      }
+    }
+  }
+}

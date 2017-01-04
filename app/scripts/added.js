@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
 		}
 		next.children(':first-child').clone().appendTo(jQuery(this));
 	  
-		for (var i=0;i<2;i++) {
+		for (var i=0;i<3;i++) {
 			next=next.next();
 			if (!next.length) {
 				next = jQuery(this).siblings(':first');
