@@ -1,3 +1,5 @@
+@import "color.scss";
+
 .col-xs-15,
 .col-sm-15,
 .col-md-15,
@@ -38,6 +40,12 @@
   }
 }
 
+h2{
+    color: $statement-1;
+    span{
+        color: $statement-2;
+    }
+}
 
 /* Carousel */
 .carousel-control.left, .carousel-control.right {

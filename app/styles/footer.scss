@@ -1,3 +1,23 @@
-.footer{
-	background: blue;
+@import "color.scss";
+/* Custom page footer */
+.footer {
+	padding-top: 19px;
+	color: $site-grey-hover;
+	background: $footer-background;
+	border-top: 1px solid #e5e5e5;
+	ul{
+		text-align: center;  	
+		li{
+			list-style-type: none;
+			display: inline-block;
+			a{
+				padding: 5px 10px;
+				display: block;
+				color: white;
+				&:hover{
+				  color: $statement-2;
+				};
+			}
+		}
+	}
 }
