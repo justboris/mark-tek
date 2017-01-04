@@ -38,6 +38,12 @@
   }
 }
 
+h2{
+    color: $statement-1;
+    span{
+        color: $statement-2;
+    }
+}
 
 /* Carousel */
 .carousel-control.left, .carousel-control.right {
