@@ -16,6 +16,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.carousel-control{
+  &.left {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.0001) 100%)!important;
+  }
+  &.right {
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.0001) 100%)!important;
+  }
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -40,50 +49,17 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-  .background-1{
-    background: $jumbo-background-1;
-  }
-  .background-2{
-    background: $jumbo-background-2;
-  }
-  .background-3{
-    background: $jumbo-background-3;
-  }
-}
-.true-partner-section{
-  background:  $statement-background;
-}
 
 .btn.btn-primary{
   padding: 5px 10px;
   display: block;
+  margin: 0 auto;
   
 }
-.power-partner-section{
-  background:  $true-partner-background;
-  text-align: center;
-  h2{
-    color: white;
-    padding: 10px 0;
-  }
-}
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
+h2{
+    text-transform: uppercase;
+    font-size: 40px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -92,7 +68,6 @@ body {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;

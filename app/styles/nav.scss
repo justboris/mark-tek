@@ -12,9 +12,9 @@
     }
 }
 .logo-corvias{
-    background: url("/images/logo-corvias.png") no-repeat 0 0/85%;
-    width: 200px;
-    height: 66px;
+    background: url(/images/logo-corvias.png) green no-repeat 0 0/100%;
+    width: 183px;
+    height: 61px;
     display: block;
     text-indent: -999px;
     overflow: hidden;
@@ -25,7 +25,10 @@
     text-transform: uppercase;
     font-weight: 600;
     a{
-      color: $nav-color;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 14px;
+      margin-top: 4px;
     }
   }
   .dropdown-menu{
