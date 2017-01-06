@@ -32,18 +32,20 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand logo-corvias" href="#/">Corvias</a>
+            <a class="navbar-brand logo-corvias img-holder" href="#/">Corvias</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
             <div class="search-section pull-right">
                 <div class="input-group">
                     <input type="text" class="" placeholder="SEARCH" aria-describedby="basic-addon2">
-                    <span class="glyphicon glyphicon-search"></span>
+                    <div class="search-button">
+                      <a ng-href="#" class="search-click glyphicon glyphicon-search"></a>
+                      <a class="header-contact" type="button" >
+                        Contact
+                      </a>
+                    </div>
                 </div>
-                <a class="header-contact" type="button" >
-                Contact
-                </a>
             </div>
 
             <ul class="pull-right nav navbar-nav">
@@ -91,18 +93,19 @@
               </div>
               <div class="col-sm-6 col-md-4">
                   <div class="caption">
-                    <img ng-src="/images/true-1.png" alt="Government Partnerships" />
-                    <h3>Government Partnerships</h3>
+                    
+                    <div class="government-bg img-holder">Government Partnerships</div>
+                    <h3><a href="#">Government Partnerships</a></h3>
                     <p>From state initiatives to municipal programs to military housing efforts, we partner with government organizations to solve procurement and financing challenges, deferred maintenance while adding resources, and measurable performance. With no additional cost.</p>
-                    <p><a href="#" class="btn-circle" role="button "><span class="glyphicon glyphicon-menu-right"></span></a></p>
+                    <p><a href="#" class="btn-circle" ><span class="glyphicon glyphicon-menu-right"></span></a></p>
                   </div>
               </div>
               <div class="col-sm-6 col-md-4">
                   <div class="caption">
-                    <img ng-src="/images/true-2.png" alt="Higher Education Partnerships" />
-                    <h3>Higher Education Partnerships</h3>
+                    <div class="higher-education-bg img-holder">Higher Education Partnerships</div>
+                    <h3><a href="#">Higher Education Partnerships</a></h3>
                     <p>Whether public or private, we help educational institutions enhance the student experience, defease debt while retaining ownership and control so they can focus on their higher purpose: providing a world-class education.</p>
-                    <p><a href="#" class="btn-circle" role="button "><span class="glyphicon glyphicon-menu-right"></span></a></p>
+                    <p><a href="#" class="btn-circle" ><span class="glyphicon glyphicon-menu-right"></span></a></p>
                   </div>
               </div>
             </div>
@@ -219,7 +222,7 @@
         </div>
         <div class="col-md-12 footer-section-copyright">
           <p>2012-2016 Corvias. All rights reserved.</p>
-          <img ng-src="/images/footer-equalhousing.jpg" alt="" />
+          <div class="equal-housing img-holder">Equal Housing Opportunity</div>
         </div>
       </div>
     </div>

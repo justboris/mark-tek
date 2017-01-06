@@ -35,8 +35,13 @@
 }
 
 /* Carousel */
-.carousel-control.left, .carousel-control.right {
-    background-image:none;
+.carousel-control{
+  &.left {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.0001) 100%)!important;
+  }
+  &.right {
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.0001) 100%)!important;
+  }
 }
 
 .img-responsive{
@@ -108,7 +113,13 @@
 }
 
 
-/* Sections */
+/* Universal Buttons */
+.img-holder{
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;  
+}
+
 .btn.btn-primary{
     border-radius: 0;
     width: 240px;
@@ -143,8 +154,15 @@ a{
     text-decoration: none;
 }
 
+h3 a{
+    color: $site-grey;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Sections */
 .homepage{
-    /* Main marketing message and sign up button */
     .jumbotron {
         height: 509px;
         background: url('/images/hero.jpg') no-repeat 0 0/100%;
@@ -213,13 +231,25 @@ a{
             .caption{
                 margin: 10% auto;
                 text-align: center;
+                .government-bg{
+                    background: url(/images/true-1.png) no-repeat 0 0/100%;
+                    width: 296px;
+                    height: 185px;
+                }
+                .higher-education-bg{
+                    background: url(/images/true-2.png) no-repeat 0 0/100%;
+                    width: 296px;
+                    height: 185px;
+
+                }
                 p{
                     font-size: 12px;
                     line-height: 1.6em;                
                 }  
                  &:hover{
-                    h3{
+                    h3 a{
                         color: black;
+                        text-decoration: none;
                     }
                     .btn-circle{
                         border-color: $circle-btn-hover;
@@ -253,9 +283,7 @@ a{
         }
         .caption{
             h3 a{
-                color: $site-grey;
                 font-size: 16px;
-                text-transform: uppercase;
             }
             .item-date{
                 margin-bottom: 10px;

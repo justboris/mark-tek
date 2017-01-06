@@ -36,14 +36,18 @@
 		}
 	}
 	.footer-section-copyright{
-		p, img{
+		p, .equal-housing{
 			text-align: center;
 			margin: 20px auto;			
 			display: block;
 			color: $site-grey-hover;
 		}
-		img{
-			width: 50px;
-		}
+        .equal-housing{
+            background: url(/images/footer-equalhousing.jpg) no-repeat 0 0/100%;
+            width: 50px;
+            height: 51px;
+
+        }
+
 	}
 }

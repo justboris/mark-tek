@@ -2,33 +2,77 @@
 @import "color.scss";
 
 .search-section{
-    width: 369px;
-    .input-group,
-    header-contact{
+    width: 266px;
+    clear: right;
+    .input-group{
+      width: 100%;
+    }
+    input,
+    .search-button{
+      vertical-align: bottom;
       display: inline-block;
     }
-    .input{
-      width: 269px;
+    input{
+      width: 60%;
+      height: 25px;
+    }
+    .search-button{
+      width: 40%;
+      height: 32px;
+      margin-left: -1px;
+      padding-top: 6px;
+      background: $search-background;
+      a{
+        text-decoration: none;
+      }
+      .search-click,
+      .header-contact{
+        display: inline-block;
+      }
+      .search-click{
+        width: 24px;
+        height: 25px;
+        background: gray;
+        padding: 5px;
+        background: $search-button;
+        color: white;
+        &:hover{
+          background: $site-grey;          
+        }
+      }
+      .header-contact{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;    
+        width: 68%;
+        color: $site-grey;          
+        &:hover{
+          color: white;          
+        }
+
+      }
     }
 }
 .logo-corvias{
     background: url(/images/logo-corvias.png) green no-repeat 0 0/100%;
-    width: 183px;
-    height: 61px;
-    display: block;
-    text-indent: -999px;
-    overflow: hidden;
+    width: 204px;
+    height: 68px;
 }
+
 .nav.navbar-nav{
   li{
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     a{
+      color: $nav-color;
       padding-top: 6px;
       padding-bottom: 6px;
       font-size: 14px;
       margin-top: 4px;
+      &:hover{
+        color: $nav-dropdown;
+      }
     }
   }
   .dropdown-menu{
