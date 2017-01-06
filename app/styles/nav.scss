@@ -1,9 +1,13 @@
 
 @import "color.scss";
-
-.search-section{
+.header{
+  .search-section{
     width: 266px;
     clear: right;
+    @media (max-width: 992px) {
+        width: 100%;
+        clear: both;
+    }
     .input-group{
       width: 100%;
     }
@@ -41,6 +45,10 @@
         }
       }
       .header-contact{
+        @media (max-width: 992px) {
+          width: 86%;
+        }
+
         text-align: center;
         text-transform: uppercase;
         font-size: 12px;    
@@ -52,39 +60,56 @@
 
       }
     }
-}
-.logo-corvias{
-    background: url(/images/logo-corvias.png) green no-repeat 0 0/100%;
-    width: 204px;
-    height: 68px;
-}
-
-.nav.navbar-nav{
-  li{
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    a{
-      color: $nav-color;
-      padding-top: 6px;
-      padding-bottom: 6px;
-      font-size: 14px;
-      margin-top: 4px;
-      &:hover{
-        color: $nav-dropdown;
-      }
-    }
   }
-  .dropdown-menu{
-    background: $nav-dropdown;
+  .logo-corvias{
+      background: url(/images/logo-corvias.png) green no-repeat 0 0/100%;
+      width: 204px;
+      height: 68px;
+  }
+
+  .nav.navbar-nav{
+    @media (max-width: 992px) {
+      width: 100%;
+      clear: both;
+      float: none;
+    }
     li{
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
       a{
-        background: $nav-dropdown;
-        color: white;
+        color: $nav-color;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 14px;
+        margin-top: 4px;
         &:hover{
-          color: $nav-dropdown-hover;
+          color: $nav-dropdown;
         }
       }
     }
+    .dropdown-menu{
+      background: $nav-dropdown;
+      z-index: 10000;
+      li{
+        a{
+          background: $nav-dropdown;
+          color: white;
+          &:hover{
+            color: $nav-dropdown-hover;
+          }
+        }
+      }
+    }
+  }  
+  .navbar-toggle{
+    .icon-bar{
+      background: $nav-color;
+    }
+    &:hover .icon-bar{
+      background: $nav-dropdown;
+    }
+
   }
+
 }
