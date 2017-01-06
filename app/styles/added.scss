@@ -30,104 +30,7 @@
     .col-lg-15 {
         width: 20%;
         float: left;
-    }
-}
-/* Carousel */
-.homepage{
-    /* Main marketing message and sign up button */
-    .jumbotron {
-        height: 509px;
-        background: url('/images/hero.jpg') no-repeat 0 0/100%;
-        position: relative;
-        background-position: 0% 25%;
-        background-size: cover;
-        background-repeat: no-repeat;
-      h2 {
-        color: white;
-        z-index: 1000;
-        top: 16%;
-        position: absolute;
-        width: 23%;
-      }
-      .background-1,
-      .background-2,
-      .background-3{
-        position: absolute;
-        opacity: .3;
-      }
-
-      .background-1{
-        background: $jumbo-background-1;
-        width: 48%;
-        height: 58%;
-        top: 0;
-      }
-      .background-2{
-        background: $jumbo-background-2;
-        width: 43%;
-        height: 65%;
-        top: 10%;
-      }
-      .background-3{
-        background: $jumbo-background-3;
-        width: 36%;
-        height: 100%;
-        bottom: 0;
-      }
-    }
-    .statement-section{
-        margin: 4% auto;
-        h2{
-          font-size: 40px;
-          width: 90%;
-          margin-bottom: 20px;
-        }
-        p{
-           margin-bottom: 20px;
-        }
-    }
-    .true-partner-section{
-      background:  $statement-background;
-      .col-sm-6.col-md-4{
-        position: relative;
-        h2.statement{
-            margin-top: 50%;
-            display: block;
-            width: 80%;
-        }
-        .caption{
-            margin: 0 auto;
-            text-align: center;            
-        }
-      }
-    }
-    .power-partner-section{
-        background:  $true-partner-background;
-        text-align: center;
-        .content-wrap{
-            margin: 4% auto;
-        }
-        h2{
-            color: white;
-            padding: 10px 0;
-        }
-        .btn.btn-primary{
-            background: $jumbo-background-2;
-            border-radius: 0;
-            width: 240px;
-            padding: 20px 0;
-            box-shadow: 10px 10px 0 $true-partner-btn-shadow;
-            border: 0;
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-    }
-}
-
-h2{
-    color: $statement-1;
-    span{
-        color: $statement-2;
+        margin: 0 1%;
     }
 }
 
@@ -139,6 +42,18 @@ h2{
 .img-responsive{
     width:100%;
     height:auto;
+}
+.carousel-inner{
+    .item{
+        .col-md-15.col-lg-15.col-xs-12{
+            &:first-of-type {
+                margin-left: -5%;        
+            }
+            &:nth-of-type(5){
+                margin-right: -5%;        
+            }
+        }
+    }
 }
 
 @media (min-width: 992px ) {
@@ -191,3 +106,180 @@ h2{
         display:block;
     }
 }
+
+
+/* Sections */
+.btn.btn-primary{
+    border-radius: 0;
+    width: 240px;
+    padding: 20px 0;
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+.btn-circle{
+    display: block;
+    border: 2px solid $site-grey;
+    margin: 5px auto;
+    border-radius: 15px;
+    font-size: 13px;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    padding: 3px 0 0;
+    color: $site-grey;
+    &:hover{
+    }
+}
+
+h2{
+    color: $statement-1;
+    span{
+        color: $statement-2;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+.homepage{
+    /* Main marketing message and sign up button */
+    .jumbotron {
+        height: 509px;
+        background: url('/images/hero.jpg') no-repeat 0 0/100%;
+        position: relative;
+        background-position: 0% 25%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        h2 {
+            color: white;
+            z-index: 1000;
+            top: 16%;
+            position: absolute;
+            width: 23%;
+        }
+        .background-1,
+        .background-2,
+        .background-3{
+            position: absolute;
+            opacity: .3;
+        }
+
+        .background-1{
+            background: $jumbo-background-1;
+            width: 48%;
+            height: 58%;
+            top: 0;
+        }
+        .background-2{
+            background: $jumbo-background-2;
+            width: 43%;
+            height: 65%;
+            top: 10%;
+        }
+        .background-3{
+            background: $jumbo-background-3;
+            width: 36%;
+            height: 100%;
+            bottom: 0;
+        }
+    }
+    .statement-section,
+    .news-section{
+        margin: 4% auto;
+    }
+    .statement-section{
+        h2{
+          text-align: left;
+          font-size: 40px;
+          width: 90%;
+          margin-bottom: 20px;
+        }
+        p{
+           margin-bottom: 20px;
+        }
+    }
+    .true-partner-section{
+        background:  $statement-background;
+        .col-sm-6.col-md-4{
+            position: relative;
+            h2.statement{
+                margin-top: 50%;
+                display: block;
+                width: 80%;
+                text-align: left;
+            }
+            .caption{
+                margin: 10% auto;
+                text-align: center;
+                p{
+                    font-size: 12px;
+                    line-height: 1.6em;                
+                }  
+                 &:hover{
+                    h3{
+                        color: black;
+                    }
+                    .btn-circle{
+                        border-color: $circle-btn-hover;
+                        color: $circle-btn-hover;
+                    }
+                }       
+            }
+        }
+    }
+    .power-partner-section{
+        background:  $true-partner-background;
+        text-align: center;
+        .content-wrap{
+            margin: 4% auto;
+        }
+        h2{
+            color: white;
+            padding: 10px 0;
+        }
+        .btn.btn-primary{
+            background: $jumbo-background-2;
+            box-shadow: 10px 10px 0 $true-partner-btn-shadow;
+        }
+    }
+    .news-section{
+        h2{
+            color: $site-grey;
+            span{
+                color: black;
+            }
+        }
+        .caption{
+            h3 a{
+                color: $site-grey;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+            .item-date{
+                margin-bottom: 10px;
+                display: block;
+            }
+            span, p{
+                font-size: 12px;
+            }
+            &:hover{
+                h3 a{
+                    color: black;
+                }
+                .btn-circle{
+                    border-color: $circle-btn-hover;
+                    color: $circle-btn-hover;
+                }
+            }
+        }
+        .btn.btn-primary{
+            background: $site-grey;
+            box-shadow: 10px 10px 0 $site-grey-hover;
+            margin-top: 40px;
+        }
+    }
+}
+
+

@@ -2,6 +2,7 @@
 /* Custom page footer */
 .footer {
 	padding-top: 19px;
+	font-size: 12px;
 	color: $site-grey-hover;
 	background: $footer-background;
 	border-top: 1px solid #e5e5e5;
@@ -15,9 +16,34 @@
 				display: block;
 				color: white;
 				&:hover{
-				  color: $statement-2;
-				};
+				  color: $site-grey-hover;
+				  text-decoration: none;
+				}
 			}
+		}
+	}
+	.footer-section-primary{
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	.footer-section-second{
+		li{
+			font-weight: 200;
+			border-right: 1px solid white;
+			&:last-of-type{
+				border: none;
+			}
+		}
+	}
+	.footer-section-copyright{
+		p, img{
+			text-align: center;
+			margin: 20px auto;			
+			display: block;
+			color: $site-grey-hover;
+		}
+		img{
+			width: 50px;
 		}
 	}
 }
