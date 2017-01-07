@@ -68,11 +68,7 @@
   }
 
   .nav.navbar-nav{
-    @media (max-width: 992px) {
-      width: 100%;
-      clear: both;
-      float: none;
-    }
+
     li{
       font-size: 14px;
       text-transform: uppercase;
@@ -86,6 +82,14 @@
         &:hover{
           color: $nav-dropdown;
         }
+      }
+    }
+    @media (max-width: 992px) {
+      width: 100%;
+      clear: both;
+      float: none;
+      li a{
+        padding: 10px;
       }
     }
     .dropdown-menu{

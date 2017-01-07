@@ -345,6 +345,10 @@ h3 a{
         .btn.btn-primary{
             background: $jumbo-background-2;
             box-shadow: 10px 10px 0 $true-partner-btn-shadow;
+            border: 1px solid $jumbo-background-2;
+            &:hover{
+                background: $true-partner-btn-shadow;
+            }
         }
     }
     .news-section{
@@ -384,7 +388,11 @@ h3 a{
         .btn.btn-primary{
             background: $site-grey;
             box-shadow: 10px 10px 0 $site-grey-hover;
+            border: 1px solid $site-grey;
             margin-top: 40px;
+            &:hover{
+                background: $site-grey-hover;
+            }
         }
     }
 }
