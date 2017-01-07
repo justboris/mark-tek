@@ -18,12 +18,16 @@
 .col-sm-15 {
         width: 20%;
         float: left;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 }
 @media (min-width: 992px) {
     .col-md-15 {
         width: 20%;
         float: left;
+        padding-right: 1%;
+        padding-left: 1%;
     }
 }
 @media (min-width: 1200px) {
@@ -36,6 +40,12 @@
 
 /* Carousel */
 .carousel-control{
+  color: $site-grey;
+  box-shadow: none;
+  opacity: .9;
+  &:hover{
+    color: $site-grey-hover;
+  }
   &.left {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.1) 100%)!important;
   }
@@ -51,11 +61,34 @@
 .carousel-inner{
     .item{
         .col-md-15.col-lg-15.col-xs-12{
+            @media (min-width: 768px) and (max-width: 991px ) {
+                padding-right: 10%;
+                padding-left: 10%;
+            } 
+            @media (max-width: 991px) {
+                padding-right: 10%;
+                padding-left: 10%;
+            } 
+
             &:first-of-type {
-                margin-left: -5%;        
+                @media (min-width: 992px ) {
+                    margin-left: -5%;
+                }
+                @media (min-width: 768px) and (max-width: 991px ) {
+                    margin-left: 0;
+                } 
+                @media (max-width: 991px) {
+                    padding-right: 10%;
+                    padding-left: 10%;
+                } 
             }
             &:nth-of-type(5){
-                margin-right: -5%;        
+                @media (min-width: 992px ) {
+                    margin-right: -5%;
+                }
+                @media (min-width: 768px) and (max-width: 991px ) {
+                    margin-right: 0;
+                }  
             }
         }
     }
@@ -140,8 +173,6 @@
     text-align: center;
     padding: 3px 0 0;
     color: $site-grey;
-    &:hover{
-    }
 }
 
 h2{
@@ -258,14 +289,18 @@ h3 a{
     }
     .true-partner-section{
         background:  $statement-background;
+        h2.statement{
+            margin-top: 50%;
+            display: block;
+            width: 80%;
+            text-align: left;
+            @media (min-width: 768px){
+                margin-top: 5%;
+                width: 100%;
+            }
+        }
         .col-sm-6.col-md-4{
             position: relative;
-            h2.statement{
-                margin-top: 50%;
-                display: block;
-                width: 80%;
-                text-align: left;
-            }
             .caption{
                 margin: 10% auto;
                 text-align: center;
@@ -315,6 +350,8 @@ h3 a{
     .news-section{
         h2{
             color: $site-grey;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
             span{
                 color: black;
             }
@@ -322,6 +359,7 @@ h3 a{
         .caption{
             h3 a{
                 font-size: 16px;
+                font-weight: 900;
             }
             .item-date{
                 margin-bottom: 10px;
@@ -329,6 +367,9 @@ h3 a{
             }
             span, p{
                 font-size: 12px;
+            }
+            .btn-circle{
+                margin: 10px 0;
             }
             &:hover{
                 h3 a{
